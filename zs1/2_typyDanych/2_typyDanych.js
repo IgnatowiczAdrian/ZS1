@@ -68,12 +68,12 @@ console.log(typeof(tablica)); //object
 //
 //mama: ..lat
 //tata: ..lat
-//dzicko: ...lat
+//dziecko: ...lat
 //średni wiek wynosi: ...lat
 
-var mama = prompt("Podaj wiek mamy", "np. 25");
-var tata = prompt("Podaj wiek taty", "np. 25");
-var dziecko = prompt("Podaj wiek dziecka", "np. 25");
+var mama = prompt("Podaj wiek mamy", "25");
+var tata = prompt("Podaj wiek taty", "25");
+var dziecko = prompt("Podaj wiek dziecka", "25");
 mama = parseInt(mama);
 tata = parseInt(tata);
 dziecko = parseInt(dziecko);
@@ -85,22 +85,3 @@ document.write("<br>", "mama: ", mama , " lat");
 document.write("<br>", "tata: ", tata , " lat");
 document.write("<br>", "dziecko: ", dziecko , " lat");
 document.write("<br>", "Sredni wiek: ", wiekSredni , " lat");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

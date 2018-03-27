@@ -5,7 +5,7 @@ var nazwisko = "Kowal";
 document.write("Imię: " + imie + "<br>");
 document.write("Nazwisko: " + nazwisko);
 
-var wiek = "15"
+var wiek = "20"
 if(wiek>=18){
     document.write("<br>Jesteś pełnoletni");
 }else if(wiek<15){
@@ -14,8 +14,10 @@ if(wiek>=18){
     document.write("<br>Nie jesteś pełnoletni");
 }
 
+ //------------------------------------------------//
+
 var x,y;
-x = 10;
+x = 19;
 y = 4;
 var suma = x + y;
 window.alert("Suma wynosi: " + suma);

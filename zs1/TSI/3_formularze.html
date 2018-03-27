@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularze</title>
+    <link rel="stylesheet" href="Style/form.css"
+</head>
+<body>
+    <!--
+     action, type, name - atrybut
+     text, get, post - wartość atrybutu
+     input - element
+      -->
+       <form action="szymon.html" method="get" id="form1">
+           <fieldset>
+                   <legend>Dane: </legend>
+                <input type="text" name="imie" size="10" maxlength="5" autofocus placeholder="Janusz" id="imie" > Imię<br><br>
+
+                <input type="text" name="nazwisko" size="10" maxlength="5" autofocus placeholder="Kowal" id="nazwisko" > Nazwisko<br><br>
+
+                <input type="text" name="szkola" placeholder="ZS1" size="3" readonly id="szkola"> Szkoła<br><br>
+
+                <input type="password" name="haslo" id="haslo" maxlength="20" size="5"> Hasło <br><br>
+
+                <input type="submit" id="przycisk" value="Zatwierdź">
+                <input type="reset">
+            </fieldset>
+    </form>
+    <hr>
+    <form id="form2" action="sandra.php">
+       <h3>Wybierz kolor</h3><br>
+        <input type="radio" name="kolor" value="biały"> biały <br>
+        <input type="radio" name="kolor" value="czerwony" checked> czerwony <br>
+        <input type="radio" name="kolor" value="zielony"> zielony <br>
+        <input type="submit" name="przycisk2">
+    </form>
+    <hr>
+    <form id="form3" action="imionko.php">
+        <fieldset>
+           <legend>Wybierz imię</legend>
+            <input type="radio" name="imie" value="Janusz" checked> Janusz <br>
+            <input type="radio" name="imie" value="Grażyna"> Grażyna <br>
+            <input type="radio" name="imie" value="Mariusz"> Mariusz <br>
+            <input type="radio" name="imie" value="Karyna"> Karyna <br>
+            <input type="submit" name="przycisk3" value="Prześlij imię">
+        </fieldset>
+    </form>
+    <hr>
+    <form>
+        <input type="checkbox" value="rower" name="pojazd1"> Mam rower <br>
+        <input type="checkbox" value="samochod" name="pojazd2"> Mam samochód <br>
+        <input type="checkbox" value="samolot" name="pojazd3"> Mam samolot <br>
+        <input type="submit" name="przycisk1">
+
+    </form>
+    <hr>
+    <form>
+        <input type="color" name="color"><br><br>
+        <input type="date" id="data" min="1900-01-01" max="2018-03-07" value="2000-10-01"><br><br>
+        <input type="datetime-local"><br><br>
+        email <input type="email"><br>
+        imie <input type="text" pattern="[a-z]{2,20}"><br><br>
+        dodaj plik <input type="file"><br><br>
+        dodaj zdjęcie <input type="image" src="Img/Star.png"><br><br>
+        miesiąc <input type="month"><br>
+        suwak <input type="range" min="0" max="5" step="any"><br>
+        suwak <input type="range" min="0" max="5" step="0.1"><br>
+        suwak <input type="range" min="0" max="5" step="1"><br>
+
+        <input type="submit" name="przycisk4">
+
+    </form>
+    <hr>
+    <br>
+    <form>
+        <input type="search" placeholder="wyszukaj stronę">
+        <input type="submit" value="szukaj"><br>
+        <input type="tel"><br><br>
+        <input type="time"><br><br>
+        <input type="week"><br><br>
+        URL <input type="url" placeholder="http://www.wp.pl" size="30" minlength="10" maxlength="80"><br><br>
+    </form>
+</body>
+</html>
