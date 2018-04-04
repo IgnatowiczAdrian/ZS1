@@ -15,7 +15,8 @@ table {
 
 th, td {
     padding: 7px 10px 10px 30px;
-    bor
+    /*Góra prawo dół lewo*/
+    border: solid black;
 }
 
 th {
