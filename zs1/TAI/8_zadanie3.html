@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 3</title>
+</head>
+<body>
+    <script>
+
+    document.write('<div id="wyswietl">');
+    document.write('<input type="radio" checked name="sort" id="r">rosnąco ');
+    document.write('<input type="radio" name="sort" id="m">malejąco<br>');
+
+    var warpocz = Number(prompt('Podaj wartość początkową przedziału'));
+    var warkon = Number(prompt('Podaj wartość końcową przedziału'));
+    var text="";
+
+    function spr(){
+        let text=""
+        if (r.checked == true)
+            for (var i=warpocz; i<=warkon; i++){
+                text +=i;
+                //console.log(text);
+            }
+    }   else if(m.checked == true){
+            for (var i=koniec; i>=poczatek; i--){
+                text +=i;
+                //console.log(text);
+    }}
+        wyswietl.textContent = text;
+
+
+    r.addEventListener('click', spr);
+    m.addEventListener('click', spr);
+    </script>
+</body>
+</html>
