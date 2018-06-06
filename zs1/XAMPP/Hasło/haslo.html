@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Hasło</title>
+</head>
+<body>
+    <form name="pas1" id="pas1">
+        Podaj nowe hasło: <input type="password" name="haslo" id="haslo1">
+        <br>
+        <br>
+        Powtórz nowe hasło: <input type="password" name="haslo" id="haslo2">
+        <br>
+        <br>
+        <input type="submit" id="anuluj" value="Anuluj">
+        <input type="submit" id="zapisz" value="Zatwierdź" disabled>
+        <input type="submit" id="update" value="Update">
+    </form>
+    <script>
+    function anulujHaslo() {
+        document.forms['pas1'].action = './anuluj.html';
+    }
+
+    function zapiszHaslo() {
+        document.forms['pas1'].action = './zapisz.html';
+    }
+
+    function odblokuj() {
+        if /*haslo1.value != '' && haslo2.value != '' &&*/( haslo1.value.length >= 8 && haslo1.value == haslo2.value){
+            zapisz.disabled = false;
+        }else{
+            zapisz.disabled = true;
+        }
+    }
+
+    function przekierujDoPHP() {
+        document.forms['pas1'].action = './update.php';
+    }
+
+    anuluj.addEventListener('click', anulujHaslo)
+    zapisz.addEventListener('click', zapiszHaslo)
+    haslo1.addEventListener('input', odblokuj)
+    haslo2.addEventListener('input', odblokuj)
+    update.addEventListener('click', przekierujDoPHP)
+
+    </script>
+</body>
+</html>
