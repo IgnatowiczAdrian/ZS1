@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Funkcje</title>
+</head>
+    <style>
+        input {
+            text-align: center
+        }
+
+    </style>
+<body>
+    <input type="number" name="a" id="a">
+    <select id="dzialanie" name="dzialanie">
+        <option value="suma">+</option>
+        <option value="odejmij">-</option>
+    </select>
+    <input type="number" name="b" id="b">=
+    <input type="number" name="wynik" id="wynik" disabled><br><br>
+    <input type="submit" name="alarm" id="alarmp" value="Oblicz">
+    <script>
+        function calc(){
+            var oblicz;
+            let dzialanie = document.getElementById('dzialanie').value;
+            let a = Number(document.getElementById('a').value);
+            let b = Number(document.getElementById('b').value);
+            if (dzialanie == 'suma'){
+                oblicz = a+b;
+            }else if(dzialanie == 'odejmij'){
+                oblicz = a-b;
+            }
+            let wynik = document.getElementById('wynik');
+            wynik.value = oblicz;
+        }
+        alarmp.addEventListener('click', calc);
+    </script>
+</body>
+</html>
